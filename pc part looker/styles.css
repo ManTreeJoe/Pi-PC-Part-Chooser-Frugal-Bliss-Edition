@@ -1,0 +1,297 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+a.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+form, .oppoLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.oppoLink {
+color: #ffffff;
+}
+
+.oppoLink a {
+  text-decoration: none;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: #3D3D54;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0px 18px 35px 0px rgba(0,0,0,0.29), 0px 6px 10px 0px rgba(0,0,0,0.5);
+  max-width: 35%;
+  height: 500px;
+  margin: auto;
+}
+
+input[type="submit"] {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  margin: 1rem;
+  height: 35px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #151515;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background-color: #e8491d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 6px #858585;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #282838;;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+header {
+  background: #151515;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+ position: absolute;
+ top: 16px;
+}
+
+header .logo {
+  float: left;
+}
+
+header .nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .nav li {
+  float: left;
+  display: inline;
+  padding: 0 0px 0 20px;
+}
+
+header .nav li a {
+  padding: 5px;
+}
+
+main .home-content, h3{
+  text-align: center;
+  color: white;
+}
+
+main .home-content h2 {
+  font-size: 52px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main .home-content p{
+  font-size: 20px;
+  text-align: center;
+  color: #717171;
+  max-width: 500px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh; 
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .container h2 {
+  font-size: 52px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Styles for build.html Table */
+#componentsTable {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #ccc;
+  color: #333;
+}
+
+#componentsTable th {
+  background-color: #e8491d;
+  color: ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#componentsTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#componentsTable tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+#componentsTable tr:hover {
+  background-color: #ccc;
+}
+
+/* Style for Dropdowns in Table */
+#componentsTable select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #333;
+}
+
+
+.button.start-build {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #e8491d;
+  padding: 23px 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 7px #858585;
+}
+
+.button:hover {background-color: #b43917;}
+
+.button:active {
+  background-color: #b4391d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+footer {
+  background: #151515;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh; 
+  text-align: center;
+}
+
+hr {
+  border: .1px solid #787878;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  header .logo, header .nav {
+    float: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Hide the standard menu items */
+  header .nav ul {
+    display: none;
+    width: 100%;
+  }
+
+  /* Display the menu button */
+  .menu-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  header .nav li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
