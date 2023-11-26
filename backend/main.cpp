@@ -5,6 +5,8 @@
 #include "psu.hpp"
 #include "ram.hpp"
 #include "storage.hpp"
+#include "case.hpp"
+#include "cooler.hpp"
 
 using namespace std;
 int main()
@@ -79,6 +81,30 @@ int main()
     for (const auto& storage : StorageArray)
     {
         cout << storage << endl;
+    }
+
+    // CASE
+    CaseList myCase;
+
+    array<string, 3> CaseArray = myCase.getCaseList();
+
+    cout << "== CASE LIST ==" <<  endl;
+
+    for (const auto& cases : CaseArray)
+    {
+        cout << cases << endl;
+    }
+
+    // COOLER
+    CoolerList myCooler;
+
+    array<string, 3> CoolerArray = myCooler.getCoolerList();
+
+    cout << "== COOLER LIST ==" <<  endl;
+
+    for (const auto& cooler : CoolerArray)
+    {
+        cout << cooler << endl;
     }
 }
 
