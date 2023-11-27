@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your PC</title>
+<link rel="stylesheet" href="/src/static/css/styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="container">
+      <h1 class="logo">PCPartChooser</h1>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="build.html">Build</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="container">
+    <h2>Choose Your Parts</h2>
+    <table id="componentsTable">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Selection</th>
+          <th>Functionality</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CPU</td>
+          <td>
+            <select name="cpu" onchange="updateComponentDetails(this)">
+              <option value="">Choose a CPU</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+        <tr>
+          <td>GPU</td>
+          <td>
+            <select name="gpu" onchange="updateComponentDetails(this)">
+              <option value="">Choose a GPU</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+        <tr>
+          <td>Motherboard</td>
+          <td>
+            <select name="motherboard" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Motherboard</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+        <tr>
+          <td>RAM</td>
+          <td>
+            <select name="ran" onchange="updateComponentDetails(this)">
+              <option value="">Choose a RAM</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+        <tr>
+          <td>Case</td>
+          <td>
+            <select name="case" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Case</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+        <tr>
+          <td>Storage</td>
+          <td>
+            <select name="storage" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Storage</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+        <tr>
+          <td>Cooler</td>
+          <td>
+            <select name="cooler" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Cooler</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+        <tr>
+          <td>Power Supply</td>
+          <td>
+            <select name="powersupply" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Power Supply</option>
+            </select>
+          </td>
+          <td class="functionality">-</td>
+          <td class="price">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<footer>
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2023 PCPartChooser. All rights reserved.</p>
+    </div>
+  </footer>
+</footer>
+<script src="partChooser/src/static/js/main.js"></script>
+</body>
+</html>
+
+
+
