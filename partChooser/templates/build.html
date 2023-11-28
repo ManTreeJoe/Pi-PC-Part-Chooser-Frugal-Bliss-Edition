@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your PC</title>
+<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="container">
+      <h1 class="logo">PCPartChooser</h1>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="build.html">Build</a></li>
+        <li><a href="login.html">Login</a><a href="/logout" id="logout-link" style="display:none;">Logout</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="container">
+    <h2>Choose Your Parts</h2>
+    <table id="componentsTable">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Selection</th>
+          <th>Functionality</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CPU</td>
+          <td>
+            <select name="cpu" id="cpu-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a CPU</option>
+            </select>
+          </td>
+          <td class="functionality" id="cpu-functionality">-</td>
+          <td class="price" id="cpu-price">-</td>
+        </tr>
+        <tr>
+          <td>GPU</td>
+          <td>
+            <select name="gpu" id="gpu-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a GPU</option>
+            </select>
+          </td>
+          <td class="functionality" id="gpu-functionality">-</td>
+          <td class="price" id="gpu-price">-</td>
+        </tr>
+        <tr>
+          <td>Motherboard</td>
+          <td>
+            <select name="motherboard" id="motherboard-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Motherboard</option>
+            </select>
+          </td>
+          <td class="functionality" id="motherboard-functionality">-</td>
+          <td class="price" id="motherboard-price">-</td>
+        </tr>
+        <tr>
+          <td>RAM</td>
+          <td>
+            <select name="ram" id="ram-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a RAM</option>
+            </select>
+          </td>
+          <td class="functionality" id="ram-functionality">-</td>
+          <td class="price" id="ram-price">-</td>
+        </tr>
+        <tr>
+          <td>Case</td>
+          <td>
+            <select name="case" id="case-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Case</option>
+            </select>
+          </td>
+          <td class="functionality" id="case-functionality">-</td>
+          <td class="price" id="case-price">-</td>
+        </tr>
+        <tr>
+          <td>Storage</td>
+          <td>
+            <select name="storage" id="storage-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Storage</option>
+            </select>
+          </td>
+          <td class="functionality" id="storage-functionality">-</td>
+          <td class="price" id="storage-price">-</td>
+        </tr>
+        <tr>
+          <td>Cooler</td>
+          <td>
+            <select name="cooler" id="cooler-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Cooler</option>
+            </select>
+          </td>
+          <td class="functionality" id="cooler-functionality">-</td>
+          <td class="price" id="cooler-price">-</td>
+        </tr>
+        <tr>
+          <td>Power Supply</td>
+          <td>
+            <select name="psu" id="psu-select" onchange="updateComponentDetails(this)">
+              <option value="">Choose a Power Supply</option>
+            </select>
+          </td>
+          <td class="functionality" id="psu-functionality">-</td>
+          <td class="price" id="psu-price">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<footer>
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2023 PCPartChooser. All rights reserved.</p>
+    </div>
+  </footer>
+</footer>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
