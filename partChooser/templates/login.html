@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register</title>
-<link rel="stylesheet" href="styles.css">
+<title>Login</title>
+<link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
 <header>
@@ -14,24 +14,23 @@
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="build.html">Build</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a><a href="/logout" id="logout-link" style="display:none;">Logou>        <li><a href="register.html">Register</a></li>
       </ul>
     </div>
   </nav>
 </header>
 <main>
   <div class="container">
-    <h2>Create an Account</h2>
+    <h2>Your Account</h2>
     <div class="card">
     <form action="#" method="post">
-      <input type="text" id="username" name="username" placeholder="Username" required>
-      <input type="email" id="email" name="email" placeholder="Email" required>
+      <h3>Login In</h3>
+      <input type="text" id="username" name="username" placeholder="Username or Email" required>
       <input type="password" id="password" name="password" placeholder="Password" required>
-      <input type="submit" value="Register" class="button">
+      <input type="submit" value="Sign In" class="button">
     </form>
     <hr>
-    <p class="oppoLink">Already a member? <a href="login.html">Sign in</a></p>
+    <p class="oppoLink">Not a member? <a href="register.html">Register here</a></p>
   </div>
 </div>
 </main>
@@ -40,6 +39,6 @@
     <p>&copy; 2023 PCPartChooser. All rights reserved.</p>
   </div>
 </footer>
-<script src="main.js"></script>
+<script src="/static/js/main.js"></script>
 </body>
 </html>

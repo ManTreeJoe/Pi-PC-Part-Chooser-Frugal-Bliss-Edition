@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Build Your PC</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
 <header>
@@ -14,7 +14,7 @@
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="build.html">Build</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html">Login</a><a href="/logout" id="logout-link" style="display:none;">Logout</a></li>
         <li><a href="register.html">Register</a></li>
       </ul>
     </div>
@@ -36,82 +36,82 @@
         <tr>
           <td>CPU</td>
           <td>
-            <select name="cpu" onchange="updateComponentDetails(this)">
+            <select name="cpu" id="cpu-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a CPU</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="cpu-functionality">-</td>
+          <td class="price" id="cpu-price">-</td>
         </tr>
         <tr>
           <td>GPU</td>
           <td>
-            <select name="gpu" onchange="updateComponentDetails(this)">
+            <select name="gpu" id="gpu-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a GPU</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="gpu-functionality">-</td>
+          <td class="price" id="gpu-price">-</td>
         </tr>
         <tr>
           <td>Motherboard</td>
           <td>
-            <select name="motherboard" onchange="updateComponentDetails(this)">
+            <select name="motherboard" id="motherboard-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a Motherboard</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="motherboard-functionality">-</td>
+          <td class="price" id="motherboard-price">-</td>
         </tr>
         <tr>
           <td>RAM</td>
           <td>
-            <select name="ran" onchange="updateComponentDetails(this)">
+            <select name="ram" id="ram-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a RAM</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="ram-functionality">-</td>
+          <td class="price" id="ram-price">-</td>
         </tr>
         <tr>
           <td>Case</td>
           <td>
-            <select name="case" onchange="updateComponentDetails(this)">
+            <select name="case" id="case-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a Case</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="case-functionality">-</td>
+          <td class="price" id="case-price">-</td>
         </tr>
         <tr>
           <td>Storage</td>
           <td>
-            <select name="storage" onchange="updateComponentDetails(this)">
+            <select name="storage" id="storage-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a Storage</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="storage-functionality">-</td>
+          <td class="price" id="storage-price">-</td>
         </tr>
         <tr>
           <td>Cooler</td>
           <td>
-            <select name="cooler" onchange="updateComponentDetails(this)">
+            <select name="cooler" id="cooler-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a Cooler</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="cooler-functionality">-</td>
+          <td class="price" id="cooler-price">-</td>
         </tr>
         <tr>
           <td>Power Supply</td>
           <td>
-            <select name="powersupply" onchange="updateComponentDetails(this)">
+            <select name="psu" id="psu-select" onchange="updateComponentDetails(this)">
               <option value="">Choose a Power Supply</option>
             </select>
           </td>
-          <td class="functionality">-</td>
-          <td class="price">-</td>
+          <td class="functionality" id="psu-functionality">-</td>
+          <td class="price" id="psu-price">-</td>
         </tr>
       </tbody>
     </table>
@@ -124,6 +124,6 @@
     </div>
   </footer>
 </footer>
-<script src="main.js"></script>
+<script src="/static/js/main.js"></script>
 </body>
 </html>

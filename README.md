@@ -1,15 +1,13 @@
-# Pi-PC-Part-Chooser-Frugal-Bliss-Edition
-Not PC Part Picker.
+# PC Part Chooser
 
+### Not PC Part Picker
 
+A website and webserver using HTML, CSS, JS, Python. 
 
+<br>
 
+This project is meant to be run on a Raspberry Pi via Apache, but can be implemented on any form of server. 
 
-## install thes packages in backend folder:
-cpp-httplib: https://github.com/yhirose/cpp-httplib \
-run: ```wget https://github.com/yhirose/cpp-httplib/raw/master/httplib.h```  \
-\
-nlohmann/json: https://github.com/nlohmann/json  \
-run: ```wget https://github.com/nlohmann/json/releases/download/v3.10.5/json.hpp``` 
+<br>
 
-
+It provides a clean, stable site with JS and Python scripts handling requests for the data table and the login info.
