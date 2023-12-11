@@ -6,7 +6,7 @@ A website and webserver using HTML, CSS, JS, Python.
 
 <br>
 
-This project is meant to be run on a Raspberry Pi via Apache, but can be implemented on any form of server. 
+This project is meant to be run on a Raspberry Pi via Apache, but can be implemented on any form of server.  
 
 <br>
 
